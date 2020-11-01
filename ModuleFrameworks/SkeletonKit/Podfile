@@ -1,0 +1,22 @@
+source 'https://bitbucket.upnetix.com/scm/il/podspecrepo.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+use_frameworks!
+
+def shared_pods
+  inhibit_all_warnings!
+  pod 'LoggingKit', '~> 1.0.2'
+  pod 'TwoWayBondage', '~> 1.0.2'
+  pod 'UpnetixSystemAlertQueue', '~> 1.1.0'
+  pod 'BaseKit', '~> 1.2.0'
+  pod 'ActivityIndicatorManager', '~> 1.0.1'
+end
+
+target 'SkeletonKit' do
+  shared_pods
+end
+
+target 'SkeletonKitTests' do
+  shared_pods
+end

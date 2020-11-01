@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (5.0.5)
+  - CryptoSwift (0.7.2)
+  - NetworkKit (0.0.1):
+    - Alamofire (~> 5.0.0-rc.2)
+  - SFBaseKit (2.2.0)
+  - SFLoggingKit (1.0.3)
+  - SwiftLint (0.27.0)
+  - UpnetixLocalizer (2.1.3):
+    - CryptoSwift (~> 0.7.1)
+  - UpnetixSystemAlertQueue (1.2.0)
+
+DEPENDENCIES:
+  - NetworkKit (from `ModuleFrameworks/NetworkKit`)
+  - SFBaseKit
+  - SFLoggingKit (~> 1.0.3)
+  - SwiftLint (~> 0.27.0)
+  - UpnetixLocalizer (= 2.1.3)
+  - UpnetixSystemAlertQueue (~> 1.2.0)
+
+SPEC REPOS:
+  https://bitbucket.scalefocus.com/scm/il/podspecrepo.git:
+    - UpnetixLocalizer
+    - UpnetixSystemAlertQueue
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CryptoSwift
+    - SFBaseKit
+    - SFLoggingKit
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  NetworkKit:
+    :path: ModuleFrameworks/NetworkKit
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  CryptoSwift: cd2158be2bf639aabc63ec804707c7137c90157c
+  NetworkKit: ca151b434a344313df5f1c0c2a4c37c67ee29547
+  SFBaseKit: f4519fde4d5212d564312b31b0445c5fbfed9a27
+  SFLoggingKit: 33efe6f4ae394bd975367209de4cbe630dc6a1f2
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  UpnetixLocalizer: 34d7f8ff383f6fff3079ac6ae984f12bdf1b96c8
+  UpnetixSystemAlertQueue: 07ff62c5f62827c11d940893138e37300ce8471f
+
+PODFILE CHECKSUM: 4001198a7590a2a4be2aa741e20cdaf6080e5ede
+
+COCOAPODS: 1.9.3

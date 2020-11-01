@@ -1,0 +1,33 @@
+PODS:
+  - ActivityIndicatorManager (1.0.2)
+  - BaseKit (1.2.0)
+  - LoggingKit (1.0.2)
+  - TwoWayBondage (1.0.3)
+  - UpnetixSystemAlertQueue (1.1.0)
+
+DEPENDENCIES:
+  - ActivityIndicatorManager (~> 1.0.1)
+  - BaseKit (~> 1.2.0)
+  - LoggingKit (~> 1.0.2)
+  - TwoWayBondage (~> 1.0.2)
+  - UpnetixSystemAlertQueue (~> 1.1.0)
+
+SPEC REPOS:
+  https://bitbucket.upnetix.com/scm/il/podspecrepo.git:
+    - BaseKit
+    - LoggingKit
+    - TwoWayBondage
+    - UpnetixSystemAlertQueue
+  https://github.com/CocoaPods/Specs.git:
+    - ActivityIndicatorManager
+
+SPEC CHECKSUMS:
+  ActivityIndicatorManager: f0c553dd00c6f487028b212e38d634a2dd6448e5
+  BaseKit: d6d9c5f12897cec0b2a28074a2dcab9162ff14dd
+  LoggingKit: d1d1b3c12f834e014ad7949705ad1f85db28cd02
+  TwoWayBondage: bc91471a7238e28ba38a650af1d92bd359769728
+  UpnetixSystemAlertQueue: 50cbc3f5967185396de0ee02ad7ca6c17d6d8913
+
+PODFILE CHECKSUM: b65f561a055deb0ed70cd5d3ec2db4b7163aef2a
+
+COCOAPODS: 1.8.4
