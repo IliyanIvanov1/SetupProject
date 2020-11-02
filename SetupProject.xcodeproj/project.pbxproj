@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		115B2368239A926C001A2472 /* UpnetixLogWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115B2367239A926C001A2472 /* UpnetixLogWrapper.swift */; };
-		11AD129F23966CB400212A02 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11AD129F23966CB400212A02 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F1919527E7344EB285F14CB /* Pods_SetupProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAA94BF3507CCADF22F6855 /* Pods_SetupProject.framework */; };
 		B92D65392111A564008D9A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92D65372111A564008D9A7B /* LaunchScreen.storyboard */; };
 		B92D65552111AA6A008D9A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92D65512111AA6A008D9A7B /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B9D749582115D72300C5D388 /* IBDesignables.framework in Embed Frameworks */,
-				11AD129F23966CB400212A02 /* BuildFile in Embed Frameworks */,
+				11AD129F23966CB400212A02 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +422,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "#\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		F435CFA0CD802421658E05CE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

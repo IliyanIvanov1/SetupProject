@@ -12,7 +12,7 @@ target 'SetupProject' do
   inhibit_all_warnings!
 
   # Pods for SetupProject
-  pod 'SwiftLint', '~> 0.27.0'
+  pod 'SwiftLint', '~> 0.40.3'
   pod 'SFLoggingKit', '~> 1.0.3'
   pod 'SFBaseKit'
   pod 'NetworkKit'                     , :path => 'ModuleFrameworks/NetworkKit'
