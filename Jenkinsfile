@@ -15,7 +15,7 @@
     - master    - builds the project and deploys to TestFlight
 **/
 pipeline {
-    agent { label 'macos' }
+    agent { label 'mac' }
 
     options {
         timeout(time: 60, unit: 'MINUTES')
