@@ -38,12 +38,5 @@ pipeline {
                 junit allowEmptyResults: true, testResults: 'fastlane/test_output/report.junit'
             }
         }
-
-        stage('Archive IPA and dSym files') {
-            when { expression { BRANCH_NAME == 'qa' || BRANCH_NAME == 'stage' || (BRANCH_NAME == 'main' && params.appVersion != '4.1.0') } }
-            steps {
-                archiveArtifacts artifacts: '*.dSYM.zip, *.ipa' // Archive the ipa and dsym files (if the deploymentChoise is other than 'None') so they can be downloaded from Jenkins
-            }
-        }
     }
 }
