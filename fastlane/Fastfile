@@ -19,7 +19,6 @@ lane :lint do
     SWIFTLINT_EXECUTABLE = './Pods/SwiftLint/swiftlint'
  
     swiftlint(
-        executable: SWIFTLINT_EXECUTABLE,
-        config_file: SWIFTLINT_YML_PATH
+        executable: SWIFTLINT_EXECUTABLE
     )
 end
