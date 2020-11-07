@@ -32,10 +32,9 @@ platform :ios do
   
   desc "Run linting"
   lane :lint do
-     SWIFTLINT_EXECUTABLE = './Pods/SwiftLint/swiftlint'
 
      swiftlint(
-       executable: SWIFTLINT_EXECUTABLE,
+       executable: './Pods/SwiftLint/swiftlint',
        mode: lint
      )
   end
