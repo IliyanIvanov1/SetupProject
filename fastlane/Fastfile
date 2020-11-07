@@ -13,29 +13,13 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-APP_WORKSPACE = "SetupProject.xcworkspace"
+lane :lint do
 
-TEST_DEVICES = ["iPhone 11"]
-
-default_platform(:ios)
-
-platform :ios do
-  desc "Run iOS unit tests"
-  lane :unit_tests do
-      run_tests(
-	  workspace: APP_WORKSPACE,
-	  devices: TEST_DEVICES,
-	  derived_data_path: "../build",
-	  build_for_testing: true
-      )
-  end
-  
-  desc "Run linting"
-  lane :lint do
-
-     swiftlint(
-       executable: './Pods/SwiftLint/swiftlint',
-       mode: lint
-     )
-  end
+    SWIFTLINT_YML_PATH = './.swiftlint.yml'
+    SWIFTLINT_EXECUTABLE = './Pods/SwiftLint/swiftlint'
+ 
+    swiftlint(
+        executable: SWIFTLINT_EXECUTABLE,
+        config_file: SWIFTLINT_YML_PATH
+    )
 end
