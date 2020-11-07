@@ -7,7 +7,6 @@ pipeline {
 
     stages {
         stage('Checkstyle') {
-            when { expression { BRANCH_NAME == 'main' } }
             steps {
                 echo 'Running swiftlint ...'
                 sh """#!/bin/bash -l
@@ -22,7 +21,6 @@ pipeline {
         }
 
 	    stage('Run tests') {
-            when { expression { BRANCH_NAME.startsWith('PR-') } }
             steps {
                 echo 'Running tests...'
                 // Don't stop the pipeline if this step fails
