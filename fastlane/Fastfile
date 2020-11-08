@@ -30,4 +30,4 @@ lane :tests do
      devices: ['iPhone 6s']
      scheme: 'SetupProject'
    )
-End
+end
