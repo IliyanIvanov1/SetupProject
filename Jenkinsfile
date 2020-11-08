@@ -10,13 +10,28 @@ pipeline {
             steps {
                 echo 'Running swiftlint ...'
                 sh """#!/bin/bash -l
-                # In case you don't want to run pod install - commit your pods into the repository, otherwise pod install is needed
+                # Run pod install if pods are not committed
                 pod install
 
                 # Run lint lane which generates the report xml file
                 fastlane lint
                 """
             }
+        }
+
+	stage('Run tests') {
+      	    steps {
+         	echo 'Running tests...'
+         	// Don't stop the pipeline if this step fails
+         	catchError {
+         	    sh """#!/bin/bash -l
+            	    # Run pod install if pods are not committed
+         	    pod install
+
+                    # Run lint lane which generates the report xml file
+                    fastlane tests
+                    """
+         	}
         }
     }
 }

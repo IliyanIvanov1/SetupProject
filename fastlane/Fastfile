@@ -23,3 +23,11 @@ lane :lint do
 	config_file: SWIFTLINT_YML_PATH
     )
 end
+
+lane :tests do
+   run_tests(
+     workspace: 'SetupProject.xcworkspace'
+     devices: ['iPhone 6s']
+     scheme: 'SetupProject'
+   )
+End
