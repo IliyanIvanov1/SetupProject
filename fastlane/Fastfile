@@ -26,8 +26,8 @@ end
 
 lane :tests do
    run_tests(
-     workspace: 'SetupProject.xcworkspace'
-     devices: ['iPhone 6s']
+     workspace: 'SetupProject.xcworkspace',
+     devices: ['iPhone 6s'],
      scheme: 'SetupProject'
    )
 end
