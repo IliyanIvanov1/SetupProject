@@ -20,5 +20,6 @@ lane :lint do
  
     swiftlint(
         executable: SWIFTLINT_EXECUTABLE
+	config_file: SWIFTLINT_YML_PATH
     )
 end
