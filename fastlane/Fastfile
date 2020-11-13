@@ -42,7 +42,7 @@ lane :upload_to_firebase do
 
     gym(
       scheme: "SetupProject",
-      workspace: "../SetupProject.xcworkspace",
+      workspace: "/Users/iliyan.ivanov/Desktop/SetupProject/SetupProject.xcworkspace",
       configuration: "Release",
       clean: true,
       codesigning_identity: "iPhone Distribution"
