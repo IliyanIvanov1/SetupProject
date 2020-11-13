@@ -11,6 +11,7 @@
 		11AD129F23966CB400212A02 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F1919527E7344EB285F14CB /* Pods_SetupProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAA94BF3507CCADF22F6855 /* Pods_SetupProject.framework */; };
 		AF11A03925587FFF00016D48 /* SetupProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF11A03825587FFF00016D48 /* SetupProjectTests.swift */; };
+		AFFC05B2255C5B9300CBB142 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFFC05B1255C5B9300CBB142 /* GoogleService-Info.plist */; };
 		B92D65392111A564008D9A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92D65372111A564008D9A7B /* LaunchScreen.storyboard */; };
 		B92D65552111AA6A008D9A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92D65512111AA6A008D9A7B /* Assets.xcassets */; };
 		B92D65572111AA6A008D9A7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92D65532111AA6A008D9A7B /* AppDelegate.swift */; };
@@ -67,6 +68,7 @@
 		AF11A03625587FFF00016D48 /* SetupProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetupProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF11A03825587FFF00016D48 /* SetupProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProjectTests.swift; sourceTree = "<group>"; };
 		AF11A03A25587FFF00016D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFC05B1255C5B9300CBB142 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B92D652B2111A561008D9A7B /* SetupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92D65382111A564008D9A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B92D65512111AA6A008D9A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				B92D65532111AA6A008D9A7B /* AppDelegate.swift */,
 				B92D65512111AA6A008D9A7B /* Assets.xcassets */,
 				B92D65542111AA6A008D9A7B /* Info.plist */,
+				AFFC05B1255C5B9300CBB142 /* GoogleService-Info.plist */,
 				B92D65372111A564008D9A7B /* LaunchScreen.storyboard */,
 			);
 			path = SetupProject;
@@ -402,6 +405,7 @@
 			files = (
 				B92D65392111A564008D9A7B /* LaunchScreen.storyboard in Resources */,
 				B92D65552111AA6A008D9A7B /* Assets.xcassets in Resources */,
+				AFFC05B2255C5B9300CBB142 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,7 +734,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UWBDU93DZY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
@@ -743,6 +748,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.upnetix.SetupProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SetupProject-adHoc";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -754,7 +760,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = UWBDU93DZY;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
@@ -767,6 +774,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.upnetix.SetupProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SetupProject-adHoc";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

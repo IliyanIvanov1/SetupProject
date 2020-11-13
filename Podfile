@@ -12,6 +12,7 @@ target 'SetupProject' do
   inhibit_all_warnings!
 
   # Pods for SetupProject
+  pod 'Firebase'
   pod 'SwiftLint', '~> 0.40.3'
   pod 'SFLoggingKit', '~> 1.0.3'
   pod 'SFBaseKit'
