@@ -32,3 +32,28 @@ lane :tests do
      scheme: 'SetupProject'
    )
 end
+
+lane :upload_to_firebase do 
+  # set_info_plist_value(
+  #  path: INFO_PLIST_PATH, 
+  #   key: "CFBundleShortVersionString", 
+  #   value: APP_VERSION
+  # )
+
+    gym(
+      scheme: "SetupProject",
+      workspace: "../SetupProject.xcworkspace",
+      configuration: "Release",
+      clean: true,
+      codesigning_identity: "iPhone Distribution"
+    )
+
+
+    firebase_app_distribution(
+      app: "1:930244491014:ios:ab7af8ce5f24844c08d087",
+      testers: "iliyan.ivanov@scalefocus.com",
+      groups: "testers-group",
+      release_notes: "Test release notes",
+      firebase_cli_path: “/usr/local/bin/firebase”
+    )
+end
