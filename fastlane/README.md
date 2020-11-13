@@ -15,17 +15,16 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
-## iOS
-### ios unit_tests
+### lint
 ```
-fastlane ios unit_tests
+fastlane lint
 ```
-Run iOS unit tests
-### ios lint
+
+### tests
 ```
-fastlane ios lint
+fastlane tests
 ```
-Run linting
+
 
 ----
 
