@@ -5,7 +5,7 @@
 //  Created by Martin Vasilev on 1.08.18.
 //  Copyright © 2018 Upnetix. All rights reserved.
 //
-    
+
 import UIKit
 import NetworkKit
 import Firebase
