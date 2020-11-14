@@ -39,8 +39,6 @@ pipeline {
             steps {
                 echo 'Building, signing and deploying iOS...'
                 sh """#!/bin/bash -l
-		    # unlock keychain
-		    security -v unlock-keychain -p "H@rizma3716" "/Users/iliyan.ivanov/Library/Keychains/login.keychain-db"
 
                     # update fastlane
                     gem update fastlane
