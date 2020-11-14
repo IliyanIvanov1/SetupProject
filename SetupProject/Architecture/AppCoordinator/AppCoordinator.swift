@@ -21,7 +21,7 @@ class AppCoordinator: Coordinator {
         super.init()
         
         let navigationController = UINavigationController()
-        window?.rootViewController = navigationController
+        window?.rootViewController = ViewController123.instantiateFromStoryboard()
         window?.makeKeyAndVisible()
     }
     
