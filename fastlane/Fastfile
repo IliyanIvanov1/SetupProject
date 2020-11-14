@@ -34,6 +34,8 @@ lane :tests do
 end
 
 lane :upload_to_firebase do 
+
+    FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD = "xsxr-bbjq-fkhw-ytjt"
   # set_info_plist_value(
   #  path: INFO_PLIST_PATH, 
   #   key: "CFBundleShortVersionString", 
