@@ -17,15 +17,10 @@
 		B92D65572111AA6A008D9A7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92D65532111AA6A008D9A7B /* AppDelegate.swift */; };
 		B92D65602111AD26008D9A7B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92D655F2111AD26008D9A7B /* AppCoordinator.swift */; };
 		B972A7C7219AB83E00B4BB6C /* NetworkKit+NoConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B972A7C6219AB83E00B4BB6C /* NetworkKit+NoConnection.swift */; };
-		B972A808219ABA7200B4BB6C /* BaseDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B972A807219ABA7200B4BB6C /* BaseDesignableView.swift */; };
-		B972A814219ABC4E00B4BB6C /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7491421133BEC00C5D388 /* UtilFunctions.swift */; };
 		B9D1EE4B219D9753006509CA /* UpnetixLocalizationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1EE4A219D9753006509CA /* UpnetixLocalizationWrapper.swift */; };
 		B9D1EE4D219D9798006509CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1EE4C219D9798006509CA /* Constants.swift */; };
 		B9D1EE4F219D97AA006509CA /* LocalizerKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1EE4E219D97AA006509CA /* LocalizerKeys.swift */; };
 		B9D7491521133BEC00C5D388 /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7491421133BEC00C5D388 /* UtilFunctions.swift */; };
-		B9D749532115D72300C5D388 /* IBDesignables.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D749512115D72300C5D388 /* IBDesignables.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9D749562115D72300C5D388 /* IBDesignables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7494F2115D72300C5D388 /* IBDesignables.framework */; };
-		B9D749582115D72300C5D388 /* IBDesignables.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9D7494F2115D72300C5D388 /* IBDesignables.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9DEA1FF2122E40A001A4A61 /* UpnetixAnalyticsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DEA1FE2122E40A001A4A61 /* UpnetixAnalyticsWrapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,13 +32,6 @@
 			remoteGlobalIDString = B92D652A2111A561008D9A7B;
 			remoteInfo = SetupProject;
 		};
-		B9D749542115D72300C5D388 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B92D65232111A561008D9A7B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9D7494E2115D72300C5D388;
-			remoteInfo = IBDesignables;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B9D749582115D72300C5D388 /* IBDesignables.framework in Embed Frameworks */,
 				11AD129F23966CB400212A02 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -81,7 +68,6 @@
 		B9D1EE4C219D9798006509CA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B9D1EE4E219D97AA006509CA /* LocalizerKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizerKeys.swift; sourceTree = "<group>"; };
 		B9D7491421133BEC00C5D388 /* UtilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilFunctions.swift; sourceTree = "<group>"; };
-		B9D7494F2115D72300C5D388 /* IBDesignables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBDesignables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D749512115D72300C5D388 /* IBDesignables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBDesignables.h; sourceTree = "<group>"; };
 		B9D749522115D72300C5D388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9DEA1FE2122E40A001A4A61 /* UpnetixAnalyticsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpnetixAnalyticsWrapper.swift; sourceTree = "<group>"; };
@@ -100,15 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D749562115D72300C5D388 /* IBDesignables.framework in Frameworks */,
 				8F1919527E7344EB285F14CB /* Pods_SetupProject.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9D7494B2115D72300C5D388 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				B92D652B2111A561008D9A7B /* SetupProject.app */,
-				B9D7494F2115D72300C5D388 /* IBDesignables.framework */,
 				AF11A03625587FFF00016D48 /* SetupProjectTests.xctest */,
 			);
 			name = Products;
@@ -275,17 +252,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		B9D7494C2115D72300C5D388 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9D749532115D72300C5D388 /* IBDesignables.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		AF11A03525587FFF00016D48 /* SetupProjectTests */ = {
 			isa = PBXNativeTarget;
@@ -322,30 +288,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				B9D749552115D72300C5D388 /* PBXTargetDependency */,
 			);
 			name = SetupProject;
 			productName = Skeleton;
 			productReference = B92D652B2111A561008D9A7B /* SetupProject.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B9D7494E2115D72300C5D388 /* IBDesignables */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B9D7495B2115D72300C5D388 /* Build configuration list for PBXNativeTarget "IBDesignables" */;
-			buildPhases = (
-				B9D7494A2115D72300C5D388 /* Sources */,
-				B9D7494B2115D72300C5D388 /* Frameworks */,
-				B9D7494C2115D72300C5D388 /* Headers */,
-				B9D7494D2115D72300C5D388 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IBDesignables;
-			productName = IBDesignables;
-			productReference = B9D7494F2115D72300C5D388 /* IBDesignables.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -365,10 +312,6 @@
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
 					};
-					B9D7494E2115D72300C5D388 = {
-						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
-					};
 				};
 			};
 			buildConfigurationList = B92D65262111A561008D9A7B /* Build configuration list for PBXProject "SetupProject" */;
@@ -385,7 +328,6 @@
 			projectRoot = "";
 			targets = (
 				B92D652A2111A561008D9A7B /* SetupProject */,
-				B9D7494E2115D72300C5D388 /* IBDesignables */,
 				AF11A03525587FFF00016D48 /* SetupProjectTests */,
 			);
 		};
@@ -406,13 +348,6 @@
 				B92D65392111A564008D9A7B /* LaunchScreen.storyboard in Resources */,
 				B92D65552111AA6A008D9A7B /* Assets.xcassets in Resources */,
 				AFFC05B2255C5B9300CBB142 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9D7494D2115D72300C5D388 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,15 +466,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9D7494A2115D72300C5D388 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B972A814219ABC4E00B4BB6C /* UtilFunctions.swift in Sources */,
-				B972A808219ABA7200B4BB6C /* BaseDesignableView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -547,11 +473,6 @@
 			isa = PBXTargetDependency;
 			target = B92D652A2111A561008D9A7B /* SetupProject */;
 			targetProxy = AF11A03B25587FFF00016D48 /* PBXContainerItemProxy */;
-		};
-		B9D749552115D72300C5D388 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B9D7494E2115D72300C5D388 /* IBDesignables */;
-			targetProxy = B9D749542115D72300C5D388 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -780,65 +701,6 @@
 			};
 			name = Release;
 		};
-		B9D749592115D72300C5D388 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UWBDU93DZY;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = IBDesignables/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.upnetix.IBDesignables;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B9D7495A2115D72300C5D388 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UWBDU93DZY;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = IBDesignables/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.upnetix.IBDesignables;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -865,15 +727,6 @@
 			buildConfigurations = (
 				B92D653E2111A564008D9A7B /* Debug */,
 				B92D653F2111A564008D9A7B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B9D7495B2115D72300C5D388 /* Build configuration list for PBXNativeTarget "IBDesignables" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B9D749592115D72300C5D388 /* Debug */,
-				B9D7495A2115D72300C5D388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
