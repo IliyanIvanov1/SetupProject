@@ -20,7 +20,6 @@ class AppCoordinator: Coordinator {
         self.window = window
         super.init()
         
-        let navigationController = UINavigationController()
         window?.rootViewController = ViewController123.instantiateFromStoryboard()
         window?.makeKeyAndVisible()
     }
