@@ -43,7 +43,7 @@ lane :upload_to_firebase do
 
     sigh(
       app_identifier: "com.upnetix.SetupProject",
-      username: iliyan.ivanov@scalefocus.com,
+      username: "iliyan.ivanov@scalefocus.com",
       team_id: "UWBDU93DZY",
       filename: "SetupProjectadHoc.mobileprovision"
     )
