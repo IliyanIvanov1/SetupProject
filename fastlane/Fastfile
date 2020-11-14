@@ -36,6 +36,7 @@ end
 lane :upload_to_firebase do 
 
     FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD = "xsxr-bbjq-fkhw-ytjt"
+    FIREBASE_TOKEN = "1//03X0qLuMs5GpbCgYIARAAGAMSNwF-L9IrW-U3883o0WVrWDlu29AeBkkYfqXD5dzp48oMDl6EVwQdcq303eUyUwG94l3kMWpzh7A"
   # set_info_plist_value(
   #  path: INFO_PLIST_PATH, 
   #   key: "CFBundleShortVersionString", 
@@ -62,6 +63,7 @@ lane :upload_to_firebase do
 
     firebase_app_distribution(
       app: "1:930244491014:ios:ab7af8ce5f24844c08d087",
+      firebase_cli_token: FIREBASE_TOKEN,
       testers: "iliyan.ivanov@scalefocus.com",
       groups: "testers-group",
       release_notes: "Test release notes",
