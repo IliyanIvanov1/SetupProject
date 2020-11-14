@@ -13,7 +13,7 @@ target 'SetupProject' do
 
   # Pods for SetupProject
   pod 'Firebase'
-  pod 'SwiftLint'
+  pod 'SwiftLint', '~> 0.40.3'
   pod 'SFLoggingKit', '~> 1.0.3'
   pod 'SFBaseKit'
   pod 'NetworkKit'                     , :path => 'ModuleFrameworks/NetworkKit'

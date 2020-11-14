@@ -39,6 +39,7 @@ lane :upload_to_firebase do
   #   key: "CFBundleShortVersionString", 
   #   value: APP_VERSION
   # )
+    clear_derived_data
 
     gym(
       export_method: "ad-hoc",
