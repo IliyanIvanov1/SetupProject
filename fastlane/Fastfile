@@ -15,8 +15,8 @@
 
 lane :lint do
 
-    SWIFTLINT_YML_PATH = './.swiftlint.yml'
-    SWIFTLINT_EXECUTABLE = './Pods/SwiftLint/swiftlint'
+    SWIFTLINT_YML_PATH = '/Users/iliyan.ivanov/Desktop/SetupProject/.swiftlint.yml'
+    SWIFTLINT_EXECUTABLE = '/Users/iliyan.ivanov/Desktop/SetupProject/Pods/SwiftLint/swiftlint'
  
     swiftlint(
         executable: SWIFTLINT_EXECUTABLE,
