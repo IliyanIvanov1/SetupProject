@@ -39,15 +39,16 @@ pipeline {
             steps {
                 echo 'Building, signing and deploying iOS...'
                 sh """#!/bin/bash -l
+		    # unlock keychain
+		    security -v unlock-keychain -p "H@rizma3716" "/Users/iliyan.ivanov/Library/Keychains/login.keychain-db"
+
                     # update fastlane
-                    # gem update fastlane
+                    gem update fastlane
 
                     # build and deploy for AppDistribution
                     rm -rf Pods/ Podfile.lock
                     pod install --repo-update
-                    # fastlane deploy deploymentPlatform:'AppDistribution' app_version:${params.appVersion} build_number:$BUILD_NUMBER
 		    fastlane upload_to_firebase
-                    # rm -rf ~/Library/Developer/Xcode/Archives/${new Date().format("yyyy-MM-dd")}/MLiTPStage*.xcarchive
                 """
             }
         }
