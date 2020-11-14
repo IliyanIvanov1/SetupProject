@@ -41,6 +41,7 @@ lane :upload_to_firebase do
   # )
 
     gym(
+      export_method: "ad-hoc",
       scheme: "SetupProject",
       workspace: "/Users/iliyan.ivanov/Desktop/SetupProject/SetupProject.xcworkspace",
       configuration: "Release",
