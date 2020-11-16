@@ -47,7 +47,7 @@ lane :upload_to_firebase do
       app_identifier: "com.upnetix.SetupProject",
       username: "iliyan.ivanov@scalefocus.com",
       team_id: "UWBDU93DZY",
-      filename: "SetupProjectadHoc.mobileprovision"
+      filename: "SetupProjectadHoc-2.mobileprovision"
     )
 
     gym(
