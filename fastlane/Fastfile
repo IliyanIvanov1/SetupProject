@@ -65,7 +65,7 @@ lane :upload_to_firebase do
       firebase_cli_token: FIREBASE_TOKEN,
       testers: "iliyan.ivanov@scalefocus.com",
       groups: "testers-group",
-      release_notes: "Special for my homo testers :D :D :D",
+      release_notes: "Special for my homo testers :D",
       firebase_cli_path: “/usr/local/bin/firebase”
     )
 end
