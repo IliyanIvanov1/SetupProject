@@ -47,11 +47,11 @@ lane :upload_to_firebase do
       app_identifier: "com.upnetix.SetupProject",
       username: "iliyan.ivanov@scalefocus.com",
       team_id: "UWBDU93DZY",
-      filename: "SetupProjectadHoc-2.mobileprovision"
+      filename: "SetupProjectinHouse.mobileprovision"
     )
 
     gym(
-      export_method: "ad-hoc",
+      export_method: "enterprise",
       scheme: "SetupProject",
       workspace: "/Users/iliyan.ivanov/Desktop/SetupProject/SetupProject.xcworkspace",
       configuration: "Release",
