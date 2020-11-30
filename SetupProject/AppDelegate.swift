@@ -9,7 +9,7 @@
 import UIKit
 import NetworkKit
 import Firebase
-//
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // ApiManager
         apiManager.configure(withCacher: nil, reachabilityDelegate: nil, authenticator: nil)
-        
+        var a = 5
         // Initialize the window and the appCoordinator
         window = UIWindow(frame: UIScreen.main.bounds)
         appCoordinator = AppCoordinator(window: window)
